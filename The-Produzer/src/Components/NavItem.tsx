@@ -2,7 +2,7 @@
 import React, { Fragment } from "react";
 import { NAV_ITEMS, NAV_SUB_ITEMS } from "@/static";
 import { Menu, Transition } from "@headlessui/react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
 export const NavItems = () => {
@@ -27,6 +27,11 @@ export const NavItems = () => {
 };
 
 export const NavSubItems = () => {
+
+    const pathname = usePathname();
+
+    const router = useRouter();
+
     return (
         <Menu as="div">
             {NAV_SUB_ITEMS.map((item, idx) => {
@@ -35,7 +40,10 @@ export const NavSubItems = () => {
                         className="flex flex-col"
                     >
                         <Menu.Button key={item.label}>
-                            <p className="py-2 px-3 rounded hover:orange hover:cursor-pointer dark:text-white text-gray-900">
+                            <p
+                                className={`py-2 px-3 rounded hover:orange hover:cursor-pointer ${"/bridge" === pathname ||
+                                    "/staking" === pathname ? "orange" : "dark:text-white text-gray-900"}`}
+                            >
                                 {item.label}
                             </p>
                         </Menu.Button>
@@ -57,6 +65,7 @@ export const NavSubItems = () => {
                                                 {({ active }) => (
                                                     <button
                                                         className={`${active ? "bg-orange-500 text-white" : "text-white dark:text-gray-900"}  group w-full rounded-md px-2 py-2 text-sm`}
+                                                        onClick={() => router.push(data.route)}
                                                     >
                                                         {data.title}
                                                     </button>

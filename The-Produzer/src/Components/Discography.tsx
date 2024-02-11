@@ -25,8 +25,8 @@ const Discography = () => {
                             viewport={{ once: true, amount: 0.1 }}
                             transition={{ duration: 0.5 }}
                             variants={{
-                                hidden: { opacity: 0, x: -80 },
-                                visible: { opacity: 1, x: 0 },
+                                hidden: { opacity: 0, y: -150 },
+                                visible: { opacity: 1, y: 0 },
                             }}
                         >
                             <img
@@ -66,7 +66,7 @@ const Discography = () => {
                             <img
                                 className="w-96 lg:w-full h-88 lg:h-96 object-cover object-center my-4"
                                 src={"https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/futuristic-woman-touching-shoulder-under-neon-ligh-2022-12-01-18-11-32-utc-683x1024.jpg"}
-                                alt="TIME TRAVELER"
+                                alt="TEENAGE VISION"
                             />
 
                             <div className="flex flex-col items-center gap-1">
@@ -93,14 +93,14 @@ const Discography = () => {
                             viewport={{ once: true, amount: 0.1 }}
                             transition={{ duration: 0.5 }}
                             variants={{
-                                hidden: { opacity: 0, y: -50 },
+                                hidden: { opacity: 0, y: -150 },
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
                             <img
                                 className="w-96 lg:w-full h-88 lg:h-96 object-cover object-center my-4"
                                 src={"https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/model-in-futuristic-coat-under-colorful-illuminati-2022-12-01-18-11-40-utc-683x1024.jpg"}
-                                alt="TIME TRAVELER"
+                                alt="TRILOGY JOURNEY"
                             />
 
                             <div className="flex flex-col items-center gap-1">
@@ -134,7 +134,7 @@ const Discography = () => {
                             <img
                                 className="w-96 lg:w-full h-88 lg:h-96 object-cover object-center my-4"
                                 src={"https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/woman-in-stylish-glasses-on-a-red-background-2022-08-31-22-48-44-utc-683x1024.jpg"}
-                                alt="TIME TRAVELER"
+                                alt="VENICE UNVEILED"
                             />
 
                             <div className="flex flex-col items-center gap-1">
@@ -161,14 +161,14 @@ const Discography = () => {
                             viewport={{ once: true, amount: 0.1 }}
                             transition={{ duration: 0.5 }}
                             variants={{
-                                hidden: { opacity: 0, x: 80 },
-                                visible: { opacity: 1, x: 0 },
+                                hidden: { opacity: 0, y: -150 },
+                                visible: { opacity: 1, y: 0 },
                             }}
                         >
                             <img
                                 className="w-96 lg:w-full h-88 lg:h-96 object-cover object-center my-4"
                                 src={"https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/cyberpunk-girl-in-leather-clothes-2022-02-09-21-21-54-utc-683x1024.jpg"}
-                                alt="TIME TRAVELER"
+                                alt=" LOST IN JAPAN"
                             />
 
                             <div className="flex flex-col items-center gap-1">
