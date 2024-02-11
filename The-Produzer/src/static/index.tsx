@@ -33,24 +33,6 @@ export const NAV_SUB_ITEMS = [
     }
 ];
 
-export const ABOUT = [
-    {
-        image: "https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/synthesizer-keyboard-digital-recording-home-music-2021-09-03-09-02-09-utc-2-800x533.jpg",
-        title: "TRANSFORMATION",
-        info: "FROM HUMBLE BEGINNINGS TO MUSICAL MASTERY"
-    },
-    {
-        image: "https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/synthesizer-keyboard-digital-recording-home-music-2021-09-03-06-01-14-utc-2-800x533.jpg",
-        title: "PURSUING THE PASSION",
-        info: "DELVE INTO THE STORY BEHIND MY UNWAVERING PASSION FOR MUSIC"
-    },
-    {
-        image: "https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/music-concept-background-2022-08-18-17-09-28-utc-2-800x533.jpg",
-        title: "MUSICAL EXPLORATION",
-        info: "UNVEILING BOUNDLESS CREATIVE HORIZONS"
-    }
-];
-
 export const DISCOGRAPHY = [
     {
         image: "https://templates.casloop.net/theproduzer/wp-content/uploads/sites/8/2023/06/david-bust-with-vr-glasses-and-purple-light-2022-01-07-19-46-57-utc-800x1008.jpg",
