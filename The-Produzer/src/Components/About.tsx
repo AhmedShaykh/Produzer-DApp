@@ -37,7 +37,7 @@ const About = () => {
 
                     <div className="flex flex-col items-center w-full lg:w-1/3">
                         <motion.div
-                            className="mb-0 lg:mb-4"
+                            className="mb-0 mt-0"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.1 }}
