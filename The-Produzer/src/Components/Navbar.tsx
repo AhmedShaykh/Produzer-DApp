@@ -2,12 +2,9 @@
 import React, { useState } from "react";
 import { ModeToggle } from "./ModeToggle";
 import { NavItems, NavSubItems } from "./NavItem";
-import { Button } from "@/Components/ui/button";
 import Wrapper from "./Wrapper";
-import {
-    Menu as MenuIcon,
-    X
-} from "lucide-react";
+import ConnectWallet from "./ConnectWallet";
+import { Menu as MenuIcon, X } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -61,9 +58,7 @@ const Navbar = () => {
                             <NavItems />
                             <NavSubItems />
 
-                            <Button className="p-3 mt-3 md:mt-0 rounded-none hover:bg-orange-600 dark:hover:bg-orange-600 tracking-wider font-bold bg-[#121212] dark:bg-white">
-                                CONNECT WALLET
-                            </Button>
+                            <ConnectWallet />
                         </motion.div>
                     </div>
                 </div>

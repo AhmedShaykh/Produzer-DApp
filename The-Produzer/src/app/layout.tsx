@@ -1,4 +1,6 @@
 import { ThemeProvider } from "@/Components/ThemeProvider";
+import Provider from "@/Components/Provider";
+import "@rainbow-me/rainbowkit/styles.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import "./globals.css";
@@ -22,9 +24,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
-          <Footer />
+          <Provider>
+            <Navbar />
+            {children}
+            <Footer />
+          </Provider>
         </ThemeProvider>
       </body>
     </html>
