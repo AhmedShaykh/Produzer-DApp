@@ -1,10 +1,8 @@
-import React from "react";
+import BridgePage from "@/Components/BridgePage";
 
 const Bridge = () => {
-    return (
-        <div>
-        </div>
-    )
+
+    return <BridgePage />
 };
 
 export default Bridge;
