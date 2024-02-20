@@ -1,15 +1,10 @@
 "use client";
 import {
     RainbowKitProvider,
-    getDefaultWallets,
     connectorsForWallets,
     darkTheme
 } from "@rainbow-me/rainbowkit";
-import {
-    argentWallet,
-    trustWallet,
-    ledgerWallet
-} from "@rainbow-me/rainbowkit/wallets";
+import { phantomWallet } from "@rainbow-me/rainbowkit/wallets";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import {
     polygonMumbai,
@@ -18,32 +13,19 @@ import {
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
-const projectId = "WALLET_KEY";
-
 const { chains, publicClient, webSocketPublicClient } = configureChains(
     [polygonMumbai, sepolia, lineaTestnet],
     [publicProvider()]
 );
-
-const { wallets } = getDefaultWallets({
-    appName: "RainbowKit Integrate Next.JS",
-    projectId,
-    chains,
-});
 
 const demoAppInfo = {
     appName: "RainbowKit Integrate Next.JS",
 };
 
 const connectors = connectorsForWallets([
-    ...wallets,
     {
-        groupName: "Other",
-        wallets: [
-            argentWallet({ projectId, chains }),
-            trustWallet({ projectId, chains }),
-            ledgerWallet({ projectId, chains })
-        ]
+        groupName: "Phantom",
+        wallets: [phantomWallet({ chains })],
     }
 ]);
 
