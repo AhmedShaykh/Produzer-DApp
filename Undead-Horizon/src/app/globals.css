@@ -80,6 +80,23 @@
   .wrapper {
     @apply max-w-7xl mx-auto;
   }
+
+  .bgImg {
+    background-image: url("/assets/dead.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .bgImg {
+      background-image: url("/assets/dead.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+  }
 }
 
 * {
