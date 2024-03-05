@@ -22,14 +22,13 @@ const Navbar = () => {
                 <div className="flex flex-col items-center mt-3 mb-6 pl-8 lg:pl-0">
                     <Link href={"/"}>
                         <img
+                            className="w-14 md:w-20 h-16 md:h-24"
                             src="/logo.png"
                             alt="logo"
-                            width={60}
-                            height={60}
                         />
                     </Link>
 
-                    <h5 className="absolute mt-14">
+                    <h5 className="absolute mt-14 md:mt-20">
                         Epidemic Coin
                     </h5>
                 </div>
@@ -40,9 +39,10 @@ const Navbar = () => {
                         download="/Coinsult.pdf"
                     >
                         <Button
-                            className="text-sm md:text-md font-bold tracking-widest rounded-none bg-[#FEDE00] hover:bg-black text-black hover:text-[#FEDE00] px-3 py-4"
+                            className="text-sm md:text-md font-bold tracking-widest rounded-none bg-[#FEDE00] hover:bg-black text-black hover:text-[#FEDE00] px-2 md:px-3 py-3 md:py-4"
                         >
-                            <BookCheck className="mr-3" strokeWidth={3} />
+                            <BookCheck className="mr-3 hidden md:block" strokeWidth={3} />
+                            <BookCheck className="mr-2 block md:hidden" strokeWidth={3} />
 
                             AUDIT
                         </Button>
