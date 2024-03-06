@@ -2,6 +2,7 @@
 import {
     RainbowKitProvider,
     connectorsForWallets,
+    getDefaultWallets,
     darkTheme
 } from "@rainbow-me/rainbowkit";
 import { phantomWallet } from "@rainbow-me/rainbowkit/wallets";
@@ -13,18 +14,27 @@ import {
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
+const projectId = "WALLET_KEY";
+
 const { chains, publicClient, webSocketPublicClient } = configureChains(
     [polygonMumbai, sepolia, lineaTestnet],
     [publicProvider()]
 );
 
+const { wallets } = getDefaultWallets({
+    appName: "THE PRODUZER DAPP",
+    projectId,
+    chains,
+});
+
 const demoAppInfo = {
-    appName: "RainbowKit Integrate Next.JS",
+    appName: "THE PRODUZER DAPP",
 };
 
 const connectors = connectorsForWallets([
+    ...wallets,
     {
-        groupName: "Phantom",
+        groupName: "SOLANA",
         wallets: [phantomWallet({ chains })],
     }
 ]);

@@ -6,8 +6,8 @@ import Footer from "@/Components/Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: "THE PRODUZER",
-  description: "THE PRODUZER"
+  title: "THE PRODUZER DAPP",
+  description: "THE PRODUZER DAPP"
 };
 
 export default function RootLayout({
